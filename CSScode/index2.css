@@ -1,0 +1,626 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f4f4f4;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+@media screen and (orientation: landscape) {
+	/*横屏 css*/
+    #sec-main{
+        height: 500px;
+        z-index: 100;
+    }
+    #root{
+        position: relative;
+        width: 500px;
+        height: 1420px;
+        margin: 0 auto;
+    }
+    #app{
+        height: 2000px;
+    }
+    #btn-return{
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        top: 20px;
+        left: 20px;
+        z-index: 100;
+    }
+    #btn-share{
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        right: 20px;
+        top: 20px;
+        z-index: 100;
+    }
+    #btn-frame1{
+        position: absolute;
+        display: inline-block;
+        font-size: 20px;
+        vertical-align: middle;
+        color: white;
+        z-index: 100;
+        left: 130px;
+        top: 5px;
+    }
+    #txt-location{
+        position: absolute;
+        /* height: 10px; */
+        line-height: 16px;
+        width: 76%;
+        margin: 18px 12% 6px;
+        font-size: 30px;
+        color: #fff;
+        -webkit-tap-highlight-color: transparent;
+        text-align: center;
+        z-index: 100;
+    }
+    .layer{
+        position: absolute;
+        width: 100%;
+        top: 380px;
+    }
+    #layer1{
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        top: 140px;
+    }
+    #ct-landscape{
+        width: 100%;
+        z-index: -10000;
+        top: 600px;
+    }
+    #txt-temperature{
+        position: absolute;
+        font-size: 65px;
+        color: #fff;
+        top: 40px;
+        left: 43%;
+        font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+    #txt-weather{
+        position: absolute;
+        font-size: 25px;
+        color: #fff;
+        top: 190px;        
+        text-align: center;
+        font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+    #temele{
+        position: absolute;
+        font-size: 50px;
+        color: #fff;
+        top: 130px;
+        left: 43%;
+        font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+    .locationcity{
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        width: 100%;
+        text-align: center;
+        top: 18px;
+    }
+    #ct-wind-humidity{
+        list-style: none;
+        position: absolute;
+        top: 260px;
+        height: 30px;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+    }
+    #box{
+        -webkit-animation: 10s box linear infinite normal;
+        animation: 10s box linear infinite normal;
+        position: relative;
+    }
+    @-webkit-keyframes box {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, -60px, 0);
+            transform: translate3d(0, -45px, 0);
+        }
+    }
+    @keyframes box {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, -60px, 0);
+            transform: translate3d(0, -45px, 0);
+        }
+    }
+    #li1{
+        list-style: none;
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        margin-left: 200px;
+    }
+    #li2{
+        list-style: none;
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        margin-left: 200px;
+        top: 30px;
+    }
+    #txt-tips{
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        top: 350px;
+        left: 27%;
+    }
+    #txt-weather,#weaele1main{
+        position: absolute;
+        font-size: 25px;
+        width: 100px;
+        color: white;
+        top: 100px;
+        left: 33%;
+        font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+    #leftbox{
+        position: absolute;
+        width: 45px;
+        height: 50px;
+        background-color: rgb(118,215,109);
+        left: 20px;
+        top: 70px;
+        border-radius: 10px;
+        box-shadow:2px 3px rgba(172, 172, 172, 0.5) 
+    }
+    #air{
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        padding: 2px 0px;
+    }
+    #airank{
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+    }
+    #sec-tomorrow{
+        position: relative;
+        display: flex;
+        background: #fff;
+        height: 160px;
+        top: 0px;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    #item{
+        width: 100%;
+        font-size: 20px;
+        color: #434343;
+    }
+    #date1{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    #date2{
+        position: absolute;
+        top: 30px;
+        left: 280px;
+    }
+    #img1{
+        position: absolute;
+        top: 90px;
+        width: 40px;
+        height: 30px;
+        left: 170px;
+    }
+    #img2{
+        position: absolute;
+        top: 90px;
+        width: 40px;
+        height: 30px;
+        right: 40px;
+    }
+    #tem1{
+        position: absolute;
+        top: 30px;
+        left: 150px;
+    }
+    #tem2{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
+    #weather1{
+        position: absolute;
+        top: 90px;
+        left: 30px;
+    }
+    #weather2{
+        position: absolute;
+        top: 90px;
+        left: 280px;
+    }
+    #line{
+        position: absolute;
+        top: 10px;
+        /* right: 490px; */
+        left: 230px;
+        height: 50px;
+        font-size: 100px;
+        font-weight: 30;
+        transform:rotate(0.80,1.50);
+        transform: scale(0.8,0.8);
+        color: rgb(247,247,244);
+    }
+    #sec-hours{
+        position: relative;
+        top: 20px;
+        height: 200px;
+        border-bottom: 1px solid #e4e4e4;
+        background-color: #fff;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 10px;
+        padding-top: 30px;
+    }
+    #hourswea{
+        display: flex;
+        list-style: none;
+    }
+    #hourswea li{
+        width: 300px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        color: gray;
+    }
+    #tem_hours{
+        position: absolute;
+        top: 140px;
+        margin-left: 30px;
+    }
+    #img_hours{
+        position: absolute;
+        top: 90px;
+        width: 40px;
+        height: 30px;
+        margin-left: -45px;
+    }
+    #sec_days{
+        position: relative;
+        top: 30px;
+        /* width: 100%; */
+        height: 1000px;
+        border-bottom: 1px solid #e4e4e4;
+        background-color: #fff;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: -10px;
+        padding-top: 30px;
+    }
+    #dayswea{
+        display: flex;
+        list-style: none;
+    }
+    #dayswea li{
+        display: flex;
+        width: 200px;
+        text-align: center;
+        font-size: 35px;
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 27px;
+        color: gray;
+    }
+    #ct-scroll{
+        width: 120%;
+    }
+    .toele{
+        position: absolute;
+        top: 50px;
+        width: 100px;
+        color: gray;
+        font-size: 20px;
+    }
+    .dele{
+        position: absolute;
+        width: 100px;
+        top: 90px;
+        color: gray;
+        font-size: 20px;
+    }
+    .weaele{
+        position: absolute;
+        top: 160px;
+        width: 100px;
+        color: black;
+        font-size: 24px;
+    }
+    .weaeleyesterday{
+        position: absolute;
+        top: 160px;
+        width: 100px;
+        color: lightgray;
+        font-size: 24px;
+    }
+    .img_day{
+        position: absolute;
+        top: 260px;
+        width: 50px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .imgn{
+        position: absolute;
+        top: 650px;
+        width: 50px;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .weanele{
+        position: absolute;
+        top: 730px;
+        width: 100px;
+        color: black;
+        font-size: 25px;
+    }
+    .weaneleyesterday{
+        position: absolute;
+        top: 730px;
+        width: 100px;
+        color: lightgray;
+        font-size: 25px;
+    }
+    .winele{
+        position: absolute;
+        top: 830px;
+        width: 150px;
+        color: gray;
+        font-size: 20px;
+        margin-left: -25px;
+    }
+    .winspele{
+        position: absolute;
+        top: 900px;
+        width: 150px;
+        color: gray;
+        font-size: 20px;
+        margin-left: -25px;
+    }
+    #chart1{
+        position: absolute;
+        top: 300px;
+        width: 190%; 
+        height: 500px;
+        left: 30px;
+    }
+    #chart2{
+        position: absolute;
+        top: 400px;
+        width: 190%; 
+        height: 500px;
+        left: 30px;
+    }
+    #sec-living{
+        overflow-y: hidden;
+        display: flex;
+        top: 60px;
+        height: 280px;
+        background-color: #fff;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+    #living{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1000px;
+        list-style: none;
+    }
+    #living li{
+        display: flex;
+        border: 1px solid lightgray;
+        width: 123px;
+        height: 140px;
+    }
+    .livingimg{
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .livingp1{
+        position: absolute;
+        margin-top: 65px;
+        /* margin-left: 60px; */
+        width: 123px;
+        height: 50px;
+        font-size: 18px;
+        text-align: center;
+        color: rgb(32, 32, 32);
+    }
+    .livingp2{
+        position: absolute;
+        margin:0 auto ;
+        margin-top: 95px;
+        /* margin-left: 60px; */
+        width: 123px;
+        height: 100px;
+        text-align: center;
+        font-size: 16px;
+        color: rgb(184, 184, 184);
+    }
+    #living-tab{
+        position: relative;
+        height: 30px;
+        top: 80px;
+        text-align: center;
+        background-color: #fff;
+        z-index: 30;
+        margin: 0 auto;
+    }
+    #living-tab span{
+        display: flex;
+        width: 34px;
+        height: 4px;
+        background: #e3e3e3;
+        /* border-radius: 3px; */
+        margin: 0 50px;
+        z-index: 2;
+    }
+    #living-tab,#current{
+        width: 30px;
+        height: 7px;
+        background: #cecece;
+    }
+    #sec-footer{
+        position: relative;
+        font-size:15px;
+        padding: 15px 0;
+        text-align: center;
+        color: #b2b2b2;
+        top: 120px;
+    }
+    #sec-loaction{
+        position: relative;
+        display: none;
+        top: -2280px;
+        width: 100%;
+        height: 3700px;
+        z-index: 100;
+        font-size: 50px;
+        font-weight: 500;
+        background-color: #fff; 
+        overflow: auto;
+    }
+    #search{
+        width: 100%;
+        height: 100px;
+        border-bottom: 1px solid lightgray;
+    }
+    #searchimg{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 45px;
+        top: 40px;
+        z-index: 10;
+    }
+    #search-input{
+        position: absolute;
+        margin-top: 30px;
+        left: 30px;
+        padding: 0 50px;
+        outline:none;
+        width: 60%;
+        height: 40px;
+        font-size: 20px;
+        background-color: #f2f2f2;
+        border-radius: 50px;
+        border: 0px solid #f2f2f2;
+    }
+    #searchitem{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 100%;
+        height: 3700px;
+        top: 130px;
+        background-color: white;
+        z-index: 101;
+    }
+    #searchitem li{
+        width: 100%;
+        height: 100px;
+        /* padding-left: 20px; */
+        padding: 10px 20px;
+        font-size: 20px;
+        color: rgb(60,138,255);
+    }
+    #history{
+        display: flex;
+    }
+    #cancel{
+        position: absolute;
+        color: black;
+        font-size: 20px;
+        margin-top: 35px;
+        left: 445px;
+        height: 100px;
+        width: 100px;
+    }
+    #RubbishBasket{
+        position: absolute;
+        top: 130px;
+        left: 445px;
+        width: 20px;
+        height: 20px;
+        z-index: 99;
+    }
+    #historyrecord{
+        position: absolute;
+        margin-left: 20px;
+        top: 130px;
+        font-size: 20px;
+    }
+    #hotcitytitle{
+        position: absolute;
+        margin-left: 20px;
+        top: 260px;
+        font-size: 20px;
+    }
+    #historycity{
+        position: absolute;
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        top: 160px;
+    }
+    #hotcity{
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        top: 300px;
+        width: 100%;
+    }
+    #hotcityname{
+        background-color: #f2f2f2;
+        width: 135px;
+        font-size: 20px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 5px 15px;
+        padding-top: 5px;
+    }
+    .historychildnode{
+        background-color: #f2f2f2;
+        width: 135px;
+        font-size: 20px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        margin: 5px 15px;
+        padding-top: 5px;
+    }
+}

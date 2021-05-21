@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="viewport-fit=cover">
+    <title>腾讯天气</title>
+    <link rel="icon" type="image/x-icon" href="weather-background/logo_title.ico">
+    <link rel="stylesheet" href="CSScode/index.css" type="text/css">
+    <link rel="stylesheet" href="CSScode/index2.css" type="text/css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+</head>
+
+<body>
+    <div id="root">
+        <div id="app">
+            <div id="sec-main">
+                <i class="iconfont icon-tuihui" id="btn-return"></i>
+                <i class="iconfont icon-fenxiang" id="btn-share"></i>
+                <p id="txt-location">
+                    <i class="iconfont icon-Frame1" id="btn-frame1"></i>
+                    <p id="city" class="locationcity">重庆</p>
+                </p>
+                <p id="txt-temperature">
+                    <p id="temele"></p>
+                </p>
+                <div id="txt-weather">
+                    <div id="weaele1main"></div>
+                </div>
+                <div id="ct-wind-humidity">
+                    <ul id="box">
+                        <li id="li1"></li>
+                        <li id="li2"></li>
+                    </ul>
+                </div>
+                <p id="txt-tips"></p>
+                <div id="ct-landscape">
+                    <img src="" alt="" id="imgcolor">
+                    <img src="" id="layer1" class="layer">
+                    <img src="" id="layer2" class="layer">
+                    <img src="" id="layer3" class="layer">
+                </div>
+                <div id="leftbox">
+                    <p id="air"></p>
+                    <p id="airank"></p>
+                </div>
+                <script src="JScode\js1.js"></script>
+            </div>
+            <div id="sec-tomorrow">
+                <div id="item">
+                    <div id="top">
+                        <p id="date1">今天</p>
+                        <p id="tem1"></p>
+                    </div>
+                    <div id="bottom">
+                        <p id="weather1"></p>
+                        <img src="" id="img1"></i>
+                    </div>
+                </div>
+                <span id="line">|</span>
+                <div id="item">
+                    <div id="top">
+                        <p id="date2">明天</p>
+                        <p id="tem2"></p>
+                    </div>
+                    <div id="bottom">
+                        <p id="weather2"></p>
+                        <img src="" id="img2"></i>
+                    </div>
+                </div>
+                <script src="JScode\js2.js"></script>
+            </div>
+            <div id="sec-hours">
+                <div id="ct-scroll" style="width: 400%;">
+                    <ol id="hourswea">
+                        <li>
+                            <p id="hour0" class="hours"></p>
+                            <img src="" alt="" id="img_hours0" class="img_hours">
+                            <p id="tem_hours0" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour1" class="hours"></p>
+                            <img src="" alt="" id="img_hours1" class="img_hours">
+                            <p id="tem_hours1" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour2" class="hours"></p>
+                            <img src="" alt="" id="img_hours2" class="img_hours">
+                            <p id="tem_hours2" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour3" class="hours"></p>
+                            <img src="" alt="" id="img_hours3" class="img_hours">
+                            <p id="tem_hours3" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour4" class="hours"></p>
+                            <img src="" alt="" id="img_hours4" class="img_hours">
+                            <p id="tem_hours4" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour5" class="hours"></p>
+                            <img src="" alt="" id="img_hours5" class="img_hours">
+                            <p id="tem_hours5" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour6" class="hours"></p>
+                            <img src="" alt="" id="img_hours6" class="img_hours">
+                            <p id="tem_hours6" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour7" class="hours"></p>
+                            <img src="" alt="" id="img_hours7" class="img_hours">
+                            <p id="tem_hours7" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour8" class="hours"></p>
+                            <img src="" alt="" id="img_hours8" class="img_hours">
+                            <p id="tem_hours8" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour9" class="hours"></p>
+                            <img src="" alt="" id="img_hours9" class="img_hours">
+                            <p id="tem_hours9" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour10" class="hours"></p>
+                            <img src="" alt="" id="img_hours10" class="img_hours">
+                            <p id="tem_hours10" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour11" class="hours"></p>
+                            <img src="" alt="" id="img_hours11" class="img_hours">
+                            <p id="tem_hours11" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour12" class="hours"></p>
+                            <img src="" alt="" id="img_hours12" class="img_hours">
+                            <p id="tem_hours12" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour13" class="hours"></p>
+                            <img src="" alt="" id="img_hours13" class="img_hours">
+                            <p id="tem_hours13" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour14" class="hours"></p>
+                            <img src="" alt="" id="img_hours14" class="img_hours">
+                            <p id="tem_hours14" class="tem_hours"></p>
+                        </li>                        
+                        <li>
+                            <p id="hour15" class="hours"></p>
+                            <img src="" alt="" id="img_hours15" class="img_hours">
+                            <p id="tem_hours15" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour16" class="hours"></p>
+                            <img src="" alt="" id="img_hours16" class="img_hours">
+                            <p id="tem_hours16" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour17" class="hours"></p>
+                            <img src="" alt="" id="img_hours17" class="img_hours">
+                            <p id="tem_hours17" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour18" class="hours"></p>
+                            <img src="" alt="" id="img_hours18" class="img_hours">
+                            <p id="tem_hours18" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour19" class="hours"></p>
+                            <img src="" alt="" id="img_hours19" class="img_hours">
+                            <p id="tem_hours19" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour20" class="hours"></p>
+                            <img src="" alt="" id="img_hours20" class="img_hours">
+                            <p id="tem_hours20" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour21" class="hours"></p>
+                            <img src="" alt="" id="img_hours21" class="img_hours">
+                            <p id="tem_hours21" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour22" class="hours"></p>
+                            <img src="" alt="" id="img_hours22" class="img_hours">
+                            <p id="tem_hours22" class="tem_hours"></p>
+                        </li>
+                        <li>
+                            <p id="hour23" class="hours"></p>
+                            <img src="" alt="" id="img_hours23" class="img_hours">
+                            <p id="tem_hours23" class="tem_hours"></p>
+                        </li>
+                    </ol>
+                </div>
+                <script src="JScode\js3.js"></script>
+            </div>
+            <div id="sec_days">
+                <div id="ct-scroll" style="width: 165%;">
+                    <ol id="dayswea">
+                        <li id="daywea" class="">
+                            <p id="toele0" class="toele"></p>
+                            <p id="dele0"  class="dele"></p>
+                            <p id="weaele0" class="weaeleyesterday"></p>
+                            <img src="" alt="" id="img_days0" class="img_day">
+                            <img src="" alt="" id="imgn0" class="imgn">
+                            <p id="weanele0" class="weaneleyesterday"></p>
+                            <p id="winele0" class="winele"></p>
+                            <p id="winspele0" class="winspele"></p>
+                        </li>
+                        <li id="daywea" class="">
+                            <p id="toele1" class="toele"></p>
+                            <p id="dele1"  class="dele"></p>
+                            <p id="weaele1" class="weaele"></p>
+                            <img src="" alt="" id="img_days1" class="img_day">
+                            <img src="" alt="" id="imgn1" class="imgn">
+                            <p id="weanele1" class="weanele"></p>
+                            <p id="winele1" class="winele"></p>
+                            <p id="winspele1" class="winspele"></p>
+                        </li>
+                        <li id="daywea" class="">
+                            <p id="toele2" class="toele"></p>
+                            <p id="dele2" class="dele"></p>
+                            <p id="weaele2" class="weaele"></p>
+                            <img src="" alt="" id="img_days2" class="img_day">
+                            <img src="" alt="" id="imgn2" class="imgn">
+                            <p id="weanele2" class="weanele"></p>
+                            <p id="winele2" class="winele"></p>
+                            <p id="winspele2" class="winspele"></p>
+                        </li>
+                        <li id="daywea" class="">
+                            <p id="toele3" class="toele"></p>
+                            <p id="dele3" class="dele"></p>
+                            <p id="weaele3" class="weaele"></p>
+                            <img src="" alt="" id="img_days3" class="img_day">
+                            <img src="" alt="" id="imgn3" class="imgn">
+                            <p id="weanele3" class="weanele"></p>
+                            <p id="winele3" class="winele"></p>
+                            <p id="winspele3" class="winspele"></p>
+                        </li>
+                        <li id="daywea" class="">
+                            <p id="toele4" class="toele"></p>
+                            <p id="dele4" class="dele"></p>
+                            <p id="weaele4" class="weaele"></p>
+                            <img src="" alt="" id="img_days4" class="img_day">
+                            <img src="" alt="" id="imgn4" class="imgn">
+                            <p id="weanele4" class="weanele"></p>
+                            <p id="winele4" class="winele"></p>
+                            <p id="winspele4" class="winspele"></p>
+                        </li>
+                        <li id="daywea" class="">
+                            <p id="toele5" class="toele"></p>
+                            <p id="dele5" class="dele"></p>
+                            <p id="weaele5" class="weaele"></p>
+                            <img src="" alt="" id="img_days5" class="img_day">
+                            <img src="" alt="" id="imgn5" class="imgn">
+                            <p id="weanele5" class="weanele"></p>
+                            <p id="winele5" class="winele"></p>
+                            <p id="winspele5" class="winspele"></p>
+                        </li>
+                        <li id="daywea" class="">
+                            <p id="toele6" class="toele"></p>
+                            <p id="dele6" class="dele"></p>
+                            <p id="weaele6" class="weaele"></p>
+                            <img src="" alt="" id="img_days6" class="img_day">
+                            <img src="" alt="" id="imgn6" class="imgn">
+                            <p id="weanele6" class="weanele"></p>
+                            <p id="winele6" class="winele"></p>
+                            <p id="winspele6" class="winspele"></p>
+                        </li>
+                    </ol>
+                    <div id="chart1"></div>
+                    <div id="chart2"></div>
+                </div>
+                <script src="JScode\chart.js"></script>
+                <script src="JScode\chart_night.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+                <script src="JScode\js4.js"></script>
+            </div>
+            <div id="sec-living">
+                <div id="living-scroll" style="width: 200%;">
+                    <ol id="living">
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg0">
+                            <p class="livingp1" id="livingp10"></p>
+                            <p class="livingp2" id="livingp20"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg1">
+                            <p class="livingp1" id="livingp11"></p>
+                            <p class="livingp2" id="livingp21"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg2">
+                            <p class="livingp1" id="livingp12"></p>
+                            <p class="livingp2" id="livingp22"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg3">
+                            <p class="livingp1" id="livingp13"></p>
+                            <p class="livingp2" id="livingp23"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg4">
+                            <p class="livingp1" id="livingp14"></p>
+                            <p class="livingp2" id="livingp24"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg5">
+                            <p class="livingp1" id="livingp15"></p>
+                            <p class="livingp2" id="livingp25"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg6">
+                            <p class="livingp1" id="livingp16"></p>
+                            <p class="livingp2" id="livingp26"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg7">
+                            <p class="livingp1" id="livingp17"></p>
+                            <p class="livingp2" id="livingp27"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg8">
+                            <p class="livingp1" id="livingp18"></p>
+                            <p class="livingp2" id="livingp28"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg9">
+                            <p class="livingp1" id="livingp19"></p>
+                            <p class="livingp2" id="livingp29"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg10">
+                            <p class="livingp1" id="livingp110"></p>
+                            <p class="livingp2" id="livingp210"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg11">
+                            <p class="livingp1" id="livingp111"></p>
+                            <p class="livingp2" id="livingp211"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg12">
+                            <p class="livingp1" id="livingp112"></p>
+                            <p class="livingp2" id="livingp212"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg13">
+                            <p class="livingp1" id="livingp113"></p>
+                            <p class="livingp2" id="livingp213"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg14">
+                            <p class="livingp1" id="livingp114"></p>
+                            <p class="livingp2" id="livingp214"></p>
+                        </li>
+                        <li>
+                            <img src="" alt="" class="livingimg" id="livingimg15">
+                            <p class="livingp1" id="livingp115"></p>
+                            <p class="livingp2" id="livingp215"></p>
+                        </li>
+                    </ol>
+                </div>
+                <script src="JScode\js5.js"></script>
+            </div>
+            <div id="living-tab">
+                <span id="current"></span>
+                <span id=""></span>
+            </div>
+            <div id="sec-footer">
+                <div id="ct-links">数据来源于中国天气网</div>
+                <div id="copyright">Copyright © 1998 - 2021 Tencent. All Rights Reserved</div>
+            </div>
+            <div id="sec-loaction">
+                <div id="search">
+                    <div id="input">
+                        <img src="living\search.png" alt="" id="searchimg">
+                        <!-- <a href="javascript:;" type="text" id="search-input" placeholder="搜索地区" value="搜索地区"></a> -->
+                        <div id="searchinput">
+                            <input type="text" id="search-input" placeholder="搜索地区" value="" onclick="searchitemblock()" onchange="searchitem1()">
+                        </div>
+                        <div id="searchitem"></div>
+                    </div>
+                    <a href="javascript:;" id="cancel" type="button" onclick="canceltxt()">取消</a>
+                </div>
+                <div id="hotandhistory">
+                    <div id="history">
+                        <a href="javascript:;" id="clean" onclick="cancelallhistory()" type="button">
+                            <img src="living\cancel.png" alt="" srcset="" id="RubbishBasket">
+                        </a>
+                        <p id="historyrecord">历史记录</p>
+                        <ul id="historycity"></ul>
+                    </div>
+                    <p id="hotcitytitle">热门城市</p>
+                    <ul id="hotcity">
+                        <li value="101010100" id="hotcityname">北京</li>
+                        <li value="101020100" id="hotcityname">上海</li>
+                        <li value="101280101" id="hotcityname">广州</li>
+                        <li value="101280601" id="hotcityname">深圳</li>
+                        <li value="101180101" id="hotcityname">郑州</li>
+                        <li value="101110101" id="hotcityname">西安</li>
+                        <li value="101190101" id="hotcityname">南京</li>
+                        <li value="101210101" id="hotcityname">杭州</li>
+                        <li value="101200101" id="hotcityname">武汉</li>
+                        <li value="101270101" id="hotcityname">成都</li>
+                        <li value="101070101" id="hotcityname">沈阳</li>
+                        <li value="101030100" id="hotcityname">天津</li>
+                    </ul>
+                </div>
+            </div>
+            <script src="JScode\js7.js"></script>
+        </div>
+    </div>
+</body>
+</html>
